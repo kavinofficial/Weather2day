@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Marcellus+SC&display=swap');
+:root{
+    --color-main:rgb(83, 203, 255);
+}
+*{
+    transition: 0.5s all;
+}
+#place{
+    border-color: black;
+    font-family: 'Marcellus SC', serif;
+}
+#button-addon2{
+    background-color: white;
+    border-color: rgb(0, 0, 0);
+}
+.app{
+    background-color: white;
+    border: 1px solid black;
+}
+#button-addon2:hover{
+    background-color: var(--color-main);
+    transition: 0.5s all;
+}
+.bod{
+    background-color: rgb(148, 251, 255);
+    border-color: rgb(255, 255, 255);
+}

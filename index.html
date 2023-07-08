@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather2Day</title>
+    <link rel="stylesheet" href="./Assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./Assets/dp.avif" type="image/x-icon" />
+  </head>
+  <body style="height: 70vh; width: 100%">
+    <div
+      class="outerbox w-100 d-flex justify-content-center align-items-center vh-100 p-5 mb-0 bod shadow"
+      id="out"
+    >
+      <div
+        class="app d-flex flex-column justify-content-center align-items-center rounded-3 mb-0 shadow"
+        id="appli"
+      >
+        <div class="input-group" id="srchbox">
+          <button class="btn btn-outline-secondary posit" id="button-addon2">
+            <i class="fa-solid fa-location-dot"></i>
+            <!-- <img
+              src="./Assets/location.gif"
+              alt=""
+              width="23px"
+              style="transition: 1s all"
+            /> -->
+          </button>
+          <input
+            type="text"
+            class="form-control shadow-none"
+            placeholder="Enter the Place"
+            aria-label="Enter the Place"
+            aria-describedby="button-addon2"
+            id="place"
+            style="border-right: 0cm"
+          />
+          <img
+            src="./Assets/india.png"
+            alt=""
+            srcset=""
+            width="30px"
+            height="40px"
+            class="visually-hidden"
+            id="india"
+            style="margin-top: 1px solid black; margin-bottom: 1px solid black"
+          />
+          <button
+            class="btn btn-outline-dark srch"
+            type="button"
+            id="button-addon2"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <img
+          src="./Assets/haze.jpg"
+          alt=""
+          class="img w-25 m-3 visually-hidden im"
+          id="weath"
+        />
+        <div class="description visually-hidden" id="detail">
+          <div class="d-flex temper w-25 mt-3">
+            <!-- <i
+              class="fa-solid fa-temperature-three-quarters fs-2 pe-2 ms-2 pos"
+              title="Temperature"
+            ></i> -->
+            <img
+              src="./Assets/hot.gif"
+              alt=""
+              srcset=""
+              style="height: 35px; width: 30px"
+              title="Temperature"
+            />
+            <p id="temp" class="fs-5 pt-1 ms-3 descr">Temperature</p>
+          </div>
+          <div class="d-flex temper w-25">
+            <!-- <i
+              class="fa-solid fa-cloud-rain fs-2 pe-2 pos"
+              title="Precipitation Percentage"
+            >
+            </i> -->
+            <img
+              src="./Assets/rain.gif"
+              alt=""
+              srcset=""
+              style="height: 35px; width: 30px"
+              title="rain"
+            />
+            <p id="prec" class="fs-5 pt-1 ms-3 descr">Precipitation%</p>
+          </div>
+          <div class="d-flex temper w-25">
+            <img
+              src="./Assets/humidity.gif"
+              alt=""
+              srcset=""
+              style="height: 35px; width: 30px"
+              title="Humidity"
+            />
+            <p id="humid" class="fs-5 pt-1 ms-3 descr">Humidity</p>
+          </div>
+          <div class="d-flex temper w-25">
+            <!-- <i class="fa-solid fa-wind fs-2 pos" title="Wind"></i> -->
+            <img
+              src="./Assets/wind.gif"
+              alt=""
+              srcset=""
+              style="height: 35px; width: 30px"
+              title="Wind speed"
+            />
+            <p id="wind" class="fs-5 pt-1 ms-3 descr">Wind</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
