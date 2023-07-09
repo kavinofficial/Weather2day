@@ -127,7 +127,7 @@ async function precipation() {
 async function locate() {
   let city = document.getElementById("place").value;
   await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${key}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${key}`
   )
     .then((resp) => resp.json())
     .then((data) => {
